@@ -5,3 +5,47 @@ font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Noto Sans KR', sans-serif;
  */
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font: 13px;
+    height: 100%;
+    width: 100%;
+ }
+
+
+ header {
+   height: 540px;
+   width: 100%;
+   background-color: antiquewhite;
+   position: relative;
+ }
+
+ header > #ribbon {
+     height: 480px;
+     width: 100%;
+     background-image: url(img/ribbon_bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     text-align: center;
+ }
+
+ #ribbon > .ribbon-hide {
+     width: 980px;
+     height: 480px;
+     margin: 0 auto;
+
+     position: relative;
+     top: 0;
+ }
+
+ #ribbon > .ribbon-hide #ribbon-hide-img {
+     width: 100%;
+     height: 100%;
+ }

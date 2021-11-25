@@ -6,15 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brunch by EunjiBeak</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- 헤더 -->
     <header>
         <!-- 스크롤이 일정px 까지 올라가면 hide가 떠야함 -->
         <div id="ribbon">
-            <img class="riddon_hide" src="img/ridoon_hide.png" alt="수고했어 오늘도 프로모션">
-            <img class="riddon" src="img/riddon.png" alt="수고했어 오늘도 프로모션">
+            <div class="ribbon-hide">
+                <a href="">
+                    <img id="ribbon-hide-img" src="img/ridoon_hide.png" alt="수고했어 오늘도 프로모션">
+                </a>
+            </div>
+            <div class="ribbon-show">
+                <a href="">
+                    <img id="ribbon-show-img" src="img/riddon.png" alt="수고했어 오늘도 프로모션">
+                </a>
+            </div>
         </div>
+        <!-- 헤더탑 / 로고+메뉴부분 -->
         <nav id="header-top">
             <div class="hambuger">아이콘</div>
             <h1>
@@ -23,15 +34,16 @@
             <button class="btn_start">시작하기</button>
             <div class="search">아이콘</div>
         </nav>
-        <section class="sub-menu">
-            <div class="sub-menu-top">
+        <!-- side-menu -->
+        <section class="side-menu">
+            <div class="side-menu-top">
                 <div>로고</div>
                 <p>You can make anything by writing</p>
                 <p>- C.S.Lewis -</p>
                 <button class="sub-btn-start">브런치 시작하기</button>
             </div>
 
-            <div class="sub-menu-bottom">
+            <div class="side-menu-bottom">
                 <div class="brunch-home">
                     <ul>
                         <li>
@@ -59,7 +71,9 @@
             </div>
         </section>
     </header>
+    <!-- 메인 영역 -->
     <main>
+        <!-- 배너 -->
         <section id="banner">
             <div class="banner-content">
                 <h3 class="banner-title">글이 작품이 되는 공간, 브런치<span></span></h3>
@@ -74,8 +88,12 @@
                 <span>글쓰기 약속 알림 기능 추가 안내</span>
             </p>
         </section>
+
+        <!-- 슬라이드 구성 -->
         <section id="brunch-slide">
+            <!-- 슬라이드 내용 -->
             <ul>
+                <!-- 슬라이드 페이지1 -->
                 <li class="page1">
                     <span>
                         <a href="#">
@@ -100,6 +118,7 @@
                         <span><span>by</span>여훈느</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지2 -->
                 <!-- span 2필요 -->
                 <li class="page2">
                     <a href="">
@@ -120,6 +139,7 @@
                         <span><span>by</span>병탄유리</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지3 -->
                 <li class="page3">
                     <a href="">
                         <img src="img/slide/7.jpeg" alt="">
@@ -141,6 +161,7 @@
                         <span><span>by</span>선아키</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지4 -->
                 <!-- 1번만 span2 필요 -->
                 <li class="page4">
                     <a href="">
@@ -159,6 +180,7 @@
                         <span><span>by</span>성의</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지5 -->
                 <!-- span2 필요 -->
                 <li class="page5">
                     <a href="">
@@ -179,6 +201,7 @@
                         <span><span>by</span>엄마코끼리</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지6 -->
                 <!-- 1만 span2 필요 -->
                 <li class="page6">
                     <a href="">
@@ -205,6 +228,7 @@
                         <span><span>by</span>조수필</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지7 -->
                 <!-- 1만 필요 -->
                 <li class="page7">
                     <img src="img/slide/21.jpeg" alt="">
@@ -224,7 +248,7 @@
                         <span><span>by</span>ECONN</span>
                     </a>
                 </li>
-
+                <!-- 슬라이드 페이지8 -->
                 <!-- span2 필요 -->
                 <li class="page8">
                     <img src="img/slide/24.jpeg" alt="">
@@ -244,6 +268,7 @@
                         <span><span>by</span>장수생</span>
                     </a>
                 </li>
+                <!-- 슬라이드 페이지9 -->
                 <!-- 1만 필요 -->
                 <li class="page9">
                     <a href="">
@@ -269,30 +294,34 @@
                     </a>
                 </li>
             </ul>
-
+            <!-- 슬라이드 버튼 -->
             <div>
                 <span class="prev"></span>
                 <span class="next"></span>
             </div>
-
+            <!-- 슬라이드 인덱스 배경화면으로 이미지 클립 -->
             <div class="slide-index">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
+                    <li>이미지</li>
                 </ul>
             </div>
         </section>
+
+        <!-- 브런치 키워드 영역 -->
         <section id="brunch-keyword">
             <h3 class="title">brunch keyword</h3>
             <p class="sub-title">키워드로 분류된 다양한 글 모음</p>
 
+
+            <!--키워드 그리드 -->
             <div class="keyword">
                 <ul>
                     <li class="grid-row">
@@ -327,95 +356,518 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section id="brunch-writers">
-             <h3 class="title">BRUNCH WRITERS</h3>
-             <p class="sub-title">브런치 추천 작가</p>
-             <nav class="brunch-writers">
-                 <ul>
-                     <li>드로잉</li>
-                     <li>일러스트</li>
-                     <li>문학</li>
-                 </ul>
-             </nav>
 
-              <div class="brunch-writer-content">
-                  <article class="writer">
-                      <div>
+        </section>
+
+
+        <!-- 브런치 작가 -->
+        <section id="brunch-writers">
+            <!-- 제목영역 -->
+            <h3 class="title">BRUNCH WRITERS</h3>
+            <p class="sub-title">브런치 추천 작가</p>
+            <!-- tag 별 추천작자 -->
+            <nav class="brunch-writer-tag">
+                <ul>
+                    <li>드로잉</li>
+                    <li>일러스트</li>
+                    <li>문학</li>
+                </ul>
+            </nav>
+
+
+            <!-- 드로잉 -->
+            <div class="brunch-writer-drawing">
+                <!-- writer1 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/drawing1.jpeg" alt=""></span>
+                        <span class="writer-name">달고나이모</span>
+                        <span class="writer-description">일러스트레이터</span>
+                        <span class="writer-comment">촌스럽지만 따뜻한 그림을 그려요 매일 그리는 달고나이모입니다.♡</span>
+                    </div>
+                    <div class="writer-tag">
+                        <span>드로잉</span>
+                        <span>그림</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer2 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/drawing2.png" alt=""></span>
+                        <span class="writer-name">리모</span>
+                        <span class="writer-description">한국여행작가협회 아티스트</span>
+                        <span class="writer-comment">여행드로잉작가, 흩어지는 추억을 쓰고 머물렀다 떠나는 시간을 그립니다.</span>
+                    </div>
+
+                    <div class="writer-tag">
+                        <span>드로잉</span>
+                        <span>여행</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer3 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/drawing3.jpeg" alt=""></span>
+                        <span class="writer-name">Sunim Ham</span>
+                        <span class="writer-description">디자이너</span>
+                        <span class="writer-comment">그림 그리고, 도자기 빚는, 디자이너</span>
+                    </div>
+
+                    <div class="writer-tag">
+                        <span>드로잉</span>
+                        <span>UX</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer4 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/drawing4.jpeg" alt=""></span>
+                        <span class="writer-name">김치</span>
+                        <span class="writer-description">출간작가</span>
+                        <span class="writer-comment">자작자를 꿈꾸는 가끔 디자이너</span>
+                    </div>
+
+                    <div class="writer-tag">
+                        <span>드로잉</span>
+                        <span>이세이</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer5 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/drawing5.jpeg" alt=""></span>
+                        <span class="writer-name">Yellow Duck</span>
+                        <span class="writer-description">에세이스트</span>
+                        <span class="writer-comment">남은 생은 글쓰고 그림그려요</span>
+                    </div>
+
+                    <div class="writer-tag">
+                        <span>드로잉</span>
+                        <span>글쓰기</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer6 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/drawing6.jpeg" alt=""></span>
+                        <span class="writer-name">bobae</span>
+                        <span class="writer-description">카카오 일러스트레이터</span>
+                        <span class="writer-comment">회사에서는 그림을 그리지 않는 그림그리원, 어렸을 적에 크레파스 커서도 놓지않으면 이런 어른이 됩니다.</span>
+                    </div>
+
+                    <div class="writer-tag">
+                        <span>드로잉</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 일러스트 -->
+            <div class="brunch-writer-illust">
+                <!-- writer1 -->
+                <article class="writer">
+                    <div>
                         <span class="writer-profile"><img src="img/writer/1.png" alt=""></span>
                         <span class="writer-name">Luna</span>
                         <span class="writer-description">프리랜서 일러스트레이터</span>
                         <span class="writer-comment">@hotcat_luna</span>
-                      </div>
-
-                      <div class="writer-tag">
-                          <span>일러스트</span>
-                          <span>연애</span>
-                          <span>&middot;&middot;&middot;</span>
-                      </div>
-                  </article>
-                  <article class="writer">
+                    </div>
+                    <div class="writer-tag">
+                        <span>일러스트</span>
+                        <span>연애</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer2 -->
+                <article class="writer">
                     <div>
                         <span class="writer-profile"><img src="img/writer/2.jpeg" alt=""></span>
                         <span class="writer-name">THE PARI</span>
                         <span class="writer-description">일러스트레이터</span>
-                        <span class="writer-comment">프리랜서 일러스트레이터, 브랜드디자이너 THE PARI의 브런치입니다. 작업문의는 goldpe21@naver.com</span>
-                      </div>
+                        <span class="writer-comment">프리랜서 일러스트레이터, 브랜드디자이너 THE PARI의 브런치입니다. 작업문의는
+                            goldpe21@naver.com</span>
+                    </div>
 
-                      <div class="writer-tag">
-                          <span>일러스트</span>
-                          <span>캘리그라피</span>
-                          <span>&middot;&middot;&middot;</span>
-                      </div>
-                  </article>
-                  <article class="writer">
+                    <div class="writer-tag">
+                        <span>일러스트</span>
+                        <span>캘리그라피</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer3 -->
+                <article class="writer">
                     <div>
                         <span class="writer-profile"><img src="img/writer/3.jpeg" alt=""></span>
                         <span class="writer-name">강인춘</span>
                         <span class="writer-description">한국무지개일러스트회 일러스트레이터</span>
-                        <span class="writer-comment">남녀가 만나 부부라는 이름으로 서로의 몸에 동아줄 칭칭 감고 사는 게 때로는 사랑이고 행복일 때가 있다. 그러다 언제가는 지겨워 묶인 동</span>
-                      </div>
+                        <span class="writer-comment">남녀가 만나 부부라는 이름으로 서로의 몸에 동아줄 칭칭 감고 사는 게 때로는 사랑이고 행복일 때가 있다. 그러다 언제가는
+                            지겨워 묶인 동</span>
+                    </div>
 
-                      <div class="writer-tag">
-                          <span>일러스트</span>
-                          <span>결혼</span>
-                          <span>&middot;&middot;&middot;</span>
-                      </div>
-                  </article>
-                  <article class="writer">
+                    <div class="writer-tag">
+                        <span>일러스트</span>
+                        <span>결혼</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer4 -->
+                <article class="writer">
                     <div>
                         <span class="writer-profile"><img src="img/writer/4.jpeg" alt=""></span>
                         <span class="writer-name">류승희</span>
                         <span class="writer-description">만화가</span>
-                        <span class="writer-comment">조금 느리지만 사각사각 긋는 느낌이 좋아 연필로 만화로 그립니다. &lt;그녀들의 방&gt;,&lt;오늘도 잘 살았습니다.&gt;,어린이 만화 &lt;나리나리고나리&gt;</span>
-                      </div>
+                        <span class="writer-comment">조금 느리지만 사각사각 긋는 느낌이 좋아 연필로 만화로 그립니다. &lt;그녀들의 방&gt;,&lt;오늘도 잘
+                            살았습니다.&gt;,어린이 만화 &lt;나리나리고나리&gt;</span>
+                    </div>
 
-                      <div class="writer-tag">
-                          <span>일러스트</span>
-                          <span>만화가</span>
-                          <span>&middot;&middot;&middot;</span>
-                      </div>
-                  </article>
-                  <article class="writer">
-                      <div>
-                          <div></div>
-                          <div></div>
-                      </div>
-                  </article>
-                  <article class="writer">
-                      <div>
-                          <div></div>
-                          <div></div>
-                      </div>
-                  </article>
-              </div>
+                    <div class="writer-tag">
+                        <span>일러스트</span>
+                        <span>만화가</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+                </article>
+                <!-- writer5 -->
+                <article class="writer">
+                    <div>
+                        <span class="writer-profile"><img src="img/writer/5.jpeg" alt=""></span>
+                        <span class="writer-name">anego emi</span>
+                        <span class="writer-description">에세이스트</span>
+                        <span class="writer-comment">남은 생은 글쓰고 그림그려요</span>
+                    </div>
+
+                    <div class="writer-tag">
+                        <span>일러스트</span>
+                        <span>글쓰기</span>
+                        <span>&middot;&middot;&middot;</span>
+                    </div>
+
+
+                    <!-- 문학 -->
+                    <div class="brunch-writer-illust">
+                        <!-- writer1 -->
+                        <article class="writer">
+                            <div>
+                                <span class="writer-profile"><img src="img/writer/munhak1.jpeg" alt=""></span>
+                                <span class="writer-name">Zero</span>
+                                <span class="writer-description">교수</span>
+                                <span class="writer-comment">크론병과 함꼐하는 외과의사입니다. 병원의 치열한 일상을 씁니다.</span>
+                            </div>
+                            <div class="writer-tag">
+                                <span>문학</span>
+                                <span>건강</span>
+                                <span>&middot;&middot;&middot;</span>
+                            </div>
+                        </article>
+                        <!-- writer2 -->
+                        <article class="writer">
+                            <div>
+                                <span class="writer-profile"><img src="img/writer/munhak2.jpeg" alt=""></span>
+                                <span class="writer-name">솔립</span>
+                                <span class="writer-description">작가지망생</span>
+                                <span class="writer-comment">꿈을 향해 방황하고 있는 작가 지망생입니다. 여러 주제로 글을 쓰며 독자분들과 다양한 생각을 공유하는
+                                    공간을 만들고 싶습니다.</span>
+                            </div>
+
+                            <div class="writer-tag">
+                                <span>문학</span>
+                                <span>에세이</span>
+                                <span>&middot;&middot;&middot;</span>
+                            </div>
+                        </article>
+                        <!-- writer3 -->
+                        <article class="writer">
+                            <div>
+                                <span class="writer-profile"><img src="img/writer/munhak3.jpeg" alt=""></span>
+                                <span class="writer-name">광화문덕</span>
+                                <span class="writer-description">기획자</span>
+                                <span class="writer-comment">글쓰는 삶 그리고 여행&middot;와인&middot;음식&middot;음악이야기.
+                                    기획자&middot;칼럼니스트&middot;작사가&middot;KT 위즈 팬.</span>
+                            </div>
+
+                            <div class="writer-tag">
+                                <span>문학</span>
+                                <span>글쓰기</span>
+                                <span>&middot;&middot;&middot;</span>
+                            </div>
+                        </article>
+                        <!-- writer4 -->
+                        <article class="writer">
+                            <div>
+                                <span class="writer-profile"><img src="img/writer/munhak4.jpeg" alt=""></span>
+                                <span class="writer-name">박희종</span>
+                                <span class="writer-description">회사원</span>
+                                <span class="writer-comment">아직도 꿈을 버리지 못한 어설픈 어른. 그래서 꿈을 잊은 어른들에게 꿈을 찾아주고 싶어하는 철없는 성인
+                                    교육자</span>
+                            </div>
+
+                            <div class="writer-tag">
+                                <span>문학</span>
+                                <span>직장</span>
+                                <span>&middot;&middot;&middot;</span>
+                            </div>
+                        </article>
+                        <!-- writer5 -->
+                        <article class="writer">
+                            <div>
+                                <span class="writer-profile"><img src="img/writer/munhak5.jpeg" alt=""></span>
+                                <span class="writer-name">이문숙</span>
+                                <span class="writer-description">시인</span>
+                                <span class="writer-comment">2005시집 ⌜천둥을 쪼개고 씨앗을 심다⌟ 창비, 2009 ⌜한 발짝을 옮기는 동안⌟ 창비, 2016
+                                    ⌜무릎이 무르팍이 되기까지⌟ 문학동네를 펴</span>
+                            </div>
+
+                            <div class="writer-tag">
+                                <span>문학</span>
+                                <span>&middot;&middot;&middot;</span>
+                            </div>
+                        </article>
+                        <!-- writer6 -->
+                        <article class="writer">
+                            <div>
+                                <span class="writer-profile"><img src="img/writer/munhak6.jpeg" alt=""></span>
+                                <span class="writer-name">김송희</span>
+                                <span class="writer-description">에세이스트</span>
+                                <span class="writer-comment">빅이슈 코리아 편집장, 대중문화 및 잡다한 에세이 씀. &lt;미운 청년 새끼&gt;공저. 문의 -
+                                    grimgle@naver.com</span>
+                            </div>
+
+                            <div class="writer-tag">
+                                <span>문학</span>
+                                <span>에세이</span>
+                                <span>&middot;&middot;&middot;</span>
+                            </div>
+                        </article>
+                    </div>
         </section>
-        <section>
+        <section id="writer-apply">
+            <div>
+                <img src="img/writer-apply.png" alt="브런치 작가 지원하기">
+            </div>
+        </section>
+        <!-- 추전 아티클 -->
+        <section id="recommanded">
+            <h3 class="title">RECOMMENDED ARTICLES</h3>
+            <p class="sub-title">브런치의 다양한 글을 만나보세요.</p>
+
+            <div class="recommanded-slide">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div><img src="img/recommend/1.jpeg" alt=""></ㅇ>
+                                <div><strong>엄마 밥 vs 아빠 밥</strong></div>
+                                <p>밥타령을 그리 하는 편이 아니다. 한 끼 정도는 수시로 건너뛰고, 주전부리로 때우거나 맥주 한 캔으로 대신할 때도 많았다. 요즘처럼 세끼 꼬박 따신 밥을
+                                    챙겨 먹었던 적이 언제였었나싶다. 그것도 엄마가 해주는 엄마 밥을. 잠시 한국에 와서 건강 검진도 받고 온 김에 이런저런 일도 보고 있다. 친정에서
+                                    지내는
+                                    동안 엄마는 부지런히 내 식사를 차리셨다. </p>
+
+
+                                <span><span class="info-by">by</span>리라산책</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/2.jpeg" alt=""></div>
+                            <div><strong>엄마가 버리기 시작했다</strong></div>
+                            <p># 동생 오기
+                                <span><span class="info-by">by</span></span> 3주 전 미국에 살고 있는 동생은 휴가를 오기 전부터 엄마에게 집을 치워
+                                놓으라고 신신당부를 했다. 정리 유전자가 없는 엄마는 알겠다 대답하고, 나름 매일 10리터짜리 쓰레기 봉투 하나씩을 꽉꽉 채워 내놓았다. 하지만 수십년간
+                                쌓아온 집안 곳곳의 쓰레기를 다 내보내기엔 역부족이었다. 그러다가 엄마집에 일이 있어 갔더니 그 사이 당근마켓의 </p>
+                            <span><span class="info-by">by</span>산치</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/3.jpeg" alt=""></div>
+                            <div><strong>가을은 바다를 통</div>째로 먹는 계절</strong>
+                            <p>’ 얼마 전 노량진수산물도매시장 새벽시장을 다녀왔다. 새벽 4시가 조금 넘은 시간 이미 경매가 한창이었고 낙찰된 어류는 바로 옆 도매시장에서 날개돋인 듯
+                                팔렸다. 식재료를 준비하는 식당 주인, 싸게 횟감을 사려는 일반인들로 새벽 도매시장은 생동감 있게 북적였다. 겨울로 가는 길목인 가을엔 유난히 바다생물 맛이
+                                좋을 때다. 다양한 종류가 나올뿐더러 선도도 좋</p>
+                            <span><span class="info-by">by</span>유성호의 맛있는 동네 산책</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/4.jpeg" alt=""></div>
+                            <div><strong>세계에서 가장 핫한 동네 1위에서 삽니다</strong></div>
+                            <p>내가 현재 살고 있는 우리 집 동네, 코펜하겐에 있는 뇌레브로(Nørrebro)가 최근 글로벌 매체 '타임 아웃(Time Out)'지에서 '2021 세계에서
+                                가장 멋진 동네'로 선정되었다. 타임아웃지는 전 세계 27,000명의 시민과 현지 전문가들을 대상으로 설문조사를 진행해 음식, 문화, 밤 문화, 공동체 정신,
+                                지속가능성 등을 검토하여 순위를 정했다고</p>
+                            <span><span class="info-by">by</span>annamood</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/5.jpeg" alt=""></div>
+                            <div><strong>살이 찌면 해야 하는 일</strong></div>
+                            <p>살이 쪘다 먹는 입을 때려야 할까? 아님 자제하지 못한 이성을 탓하며 머리를 쥐어박아야 할까? 배고픈 소크라테스가 될 생각은 없었지만 그렇다고 배부른 돼지가
+                                되기는 더욱 싫었는데 자꾸만 나 자신이 배부른 돼지가 되고 있음을 느낀다. 몸의 변화를 몰랐을 때는 남편이 날보고 '먹는 욕심이 많은 사람'이라고 놀려도 웃을
+                                수 있었다. 본인은 나보다 더 먹는 사람이</p>
+                            <span><span class="info-by">by</span> 조선여인</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><img src="img/recommend/6.jpeg" alt=""></div>
+                            <div><strong>늦깎이 공무원이 몰려온다.</strong></div>
+                            <p>내가 생각하는 늦깎이 공무원의 나이는 40대 이상이다. 마흔이 넘어보니 30대는 청춘으로 느껴져 앞에 3자 붙은 나이는 제외하기로 했다. 일단 지방직, 국가직
+                                공무원 시험이 끝난 후 기사를 보면 연령별 통계가 꼭 나와 있다. 기사만 봐도 40대 이상의 합격자 수는 증가하고 있다. 사이버고시센터에서 제공하는 통계자료를
+                                통해 최근 3년간 늦깎이 국가직 공무원</p>
+                            <span><span class="info-by">by</span>은반지</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/7.jpeg" alt=""></div>
+                            <div><strong>안개 낀 냥독대</strong></div>
+                            <p>홀연히 안개를 뚫고 온 고양이들이 태연하게 냥독대에 앉아서 자작나무 잎 지는 소리를 듣는다. 가을 깊은 산중에 이따금 새가 날아들고, 단풍은 절정도 없이 가만히
+                                물들었다.</p>
+                            <span><span class="info-by">by</span>이용한</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/8.jpeg" alt=""></div>
+                            <div><strong></strong></div>
+                            <p></p>
+                            <span><span class="info-by">by</span></span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/9.jpeg" alt=""></div>
+                            <div><strong>아빠에게 진심인 둘째 딸</strong></div>
+                            <p>사람 사이에는 이해관계가 존재한다. 직장 안에서는 각자의 역할과 성과를 위해 이해를 따지고, 거래처는 한 푼이라도 더 이익을 내기 위해 따지고, 대인 관계에서는
+                                이득이 될 것 같은 사람 위주로 만나려고 한다. 나부터도 도움이 되는 사람을 우선순위에 두게 되니 말이다. 아마 어릴 때는 이런 이해를 따지는 게 덜 했지
+                                싶다. 친구끼리는 아무런 조건 없이도 내 </p>
+                            <span><span class="info-by">by</span>김형준</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/10.jpeg" alt=""></div>
+                            <div><strong>시어머니가 얘기 좀 하자고 하셨다</strong></div>
+                            <p>집에 돌아가려고 짐을 싸던 중이었다. 1박 2일을 머물다 와도 가족이 움직이면 소소한 짐을 쌌다 푸는 게 일이다. 거의 20년에 이르니 예전처럼 오래 걸리진
+                                않는다. 다만 시댁에서 집에 돌아갈 때는 신경이 쓰인다. 아이들 어릴 때 옆에서 칭얼대는 애들 때문에 정신이 없어서 칫솔이니, 장난감이니 사소한 물건을 두고
+                                오면 시어머니는 꼭 "얘, 너 또 물건 두고</p>
+                            <span><span class="info-by">by</span> 은수</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><img src="img/recommend/11.jpeg" alt=""></div>
+                            <div><strong></strong></div>
+                            <p></p>
+                            <span><span class="info-by">by</span></span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/12.jpeg" alt=""></div>
+                            <div><strong></strong></div>
+                            <p></p>
+                            <span><span class="info-by">by</span></span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/13.jpeg" alt=""></div>
+                            <div><strong>외국에서 남자친구보다 중요한 것</strong></div>
+                            <p>방을 구한 후, 텅 빈 방을 어떻게든 내가 살 곳으로 만들어보려고 얼마나 인터넷에서 주문을 해대고, 중고 가게와 중고 물품 거래 사이트를 들락날락 거렸는지
+                                모른다. 포크, 칼부터 접시, 쟁반, 카페트까지 바리바리 사 날랐다. 그렇게 매트리스와 베개까지 오고, 한숨 돌리자마자그 다음날부터 본격적으로 아프기
+                                시작했다. 구내염이 생기기 시작하더니 본격적으로 편</p>
+                            <span><span class="info-by">by</span> 백마띠 소녀</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/14.jpeg" alt=""></div>
+                            <div><strong>믹스커피 마시려고 밥 먹는 엄마</strong></div>
+                            <p>"나는 믹스커피 마시려고 아침밥 먹는다. 밥은 먹기 싫어도 믹스커피는 먹고 싶어." 엄마의 무한한 사랑을 받고 있는 주인공은 믹스커피이다. 달달한 맛은 엄마의
+                                모든 시름과 화병을 녹여주는 강력한 힘을 가지고 있다. 하긴 나도 카페라테를 마시려고 아침밥을 먹으니 엄마와 나는 꽤 닮았다. 예전에 스타벅스에서 여고생들의
+                                대화를 들은 적이 있다. 아메리카노를 마</p>
+                            <span><span class="info-by">by</span>인어수인</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/15.jpeg" alt=""></div>
+                            <div><strong></strong></div>
+                            <p></p>
+                            <span><span class="info-by">by</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div><img src="img/recommend/16.jpeg" alt=""></div>
+                            <div><strong>오늘의 김밥 일기</strong></div>
+                            <p>김밥을 좋아한다. 조금 많이 좋아한다. 그렇다고 치킨이나 햄버거만큼 좋아하지는 않는다. 그러나 자주 김밥이 먹고 싶어서 김밥을 사 먹거나 그것으로 부족해질 때면
+                                내가 직접 싸 먹거나 엄마에게 싸 달라고 부탁한다. 그런데 사실한 줄 이상 먹기 시작하면 왠지 모르게 김밥의 맛이 떨어진다. 갑자기 나는 김밥을 좋아하지 않는
+                                사람이 되는 느낌이랄까? 제주도에 </p>
+                            <span><span class="info-by">by</span>Blair</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/17.jpeg" alt=""></div>
+                            <div><strong></strong></div>
+                            <p></p>
+                            <span><span class="info-by">by</span></span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/18.jpeg" alt=""></div>
+                            <div><strong>다 탕진하고 싶은 엄마의 유산</strong></div>
+                            <p>30대 육아가 한창일 즈음 내 별명은 '돌아이 육아맘'이었다. 40대 들어 채식을 시작한 후론 '옆집 비구니'가 그 자리를 대신 꿰찼다. '돌아이 육아맘'하면
+                                느낌이 오는 것처럼 난 남들과 다른 육아 방식의 소유자였고 '옆집 비구니'는 흔해 보이는 중년 아줌마가 채식이라는 금욕을 실천하는 희귀한 행태다 하여 붙여진
+                                별명 되겠다. 그 외에도 살면서 들어본 별</p>
+                            <span><span class="info-by">by</span>ECONN/span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/19.jpeg" alt=""></div>
+                            <div><strong>"알아서 마시고 가세요" 사라진 커피숍 주인</strong></div>
+                            <p>신혼집을 알아보러 꽤 오랫동안 여기저기를 돌아다녔다. 난 당연히 아파트에 살자고 했다. 맞벌이 부부가 아이 낳고 가정 이루고 살려면 ‘직장에서 가까운 아파트가
+                                최고다’는 생각을 해왔었다. 그런데 남편의 생각은 달랐다. 집은 직장에서 돌아와 쉬는 공간이면 좋겠다며 평소 자신이 생각하는 말을 늘어놓는다. 우리가 사는
+                                동네는 도심과 가깝지만 높은 건물이 없고, </p>
+                            <span><span class="info-by">by</span> 앤기자</span>
+                        </a>
+                        <a href="">
+                            <div><img src="img/recommend/20.jpeg" alt=""></div>
+                            <div><strong>세상의 유일한 공짜</strong></div>
+                            <p>"아들, 아들 좋아하는 생김치 해놨어, 밥 먹고 가" 이번 주 수요일 즈음이었던 거 같다. 어머니와 통화 중에 김장김치를 받아 가라는 말씀을 하셨다. 사실 나는
+                                집에서 밥을 먹는 경우는 거의 없다. 가족들의 경우도, 큰애나 조금 먹는 편이고(많이도 못 먹는다.) 둘째는 아직 매운 김치를 먹지 못해서 김치를 냉장고에
+                                쟁여놔도 그다음 해에 시체(?)로 발견되기</p>
+                            <span><span class="info-by">by</span>빛담</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="next-btn">v.9</div>
+                <div class="prev-btn">v.9</div>
+            </div>
 
         </section>
+
+        <button id="top-btn" type=button><a href="#">top</a></button>
     </main>
 
     <footer>
+        <section class="footer-top">
+            <div class="footer-top-left">
+                <div class="footer-logo"></div>
+                <p>You can make anything by writing</p>
+                <p>C.S.Levis</p>
+            </div>
+            <div class="footer-top-right">
+                <ul>
+                    <li><a href="">브런치 이용안내</a></li>
+                    <li><a href="">작가신청</a></li>
+                    <li><a href="">작가 지원 프로젝트</a></li>
+                    <li><a href="">제휴제안</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">이전 이용약관</a></li>
+                    <li><a href=""><b>카카오 개인정보 처리방침</b></a></li>
+                    <li><a href="">청소년 보호정책</a></li>
+                    <li><a href="">운영정책</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">브런치 공지사항</a></li>
+                    <li><a href="">브런치 카카오계정</a></li>
+                    <li><a href="">브런치 인스타그램</a></li>
+                    <li><a href="">브런치 페이스북</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy;Kakao Corp.</p>
+
+            <div id="app-download">
+                <a href="">플레이스토어</a>
+                <a href="">애플</a>
+            </div>
+        </section>
 
     </footer>
 </body>

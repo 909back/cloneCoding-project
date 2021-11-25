@@ -55,7 +55,7 @@
             <!-- 연락처 및 고객센터 -->
             <div class="contact pull-right">
                 <ul class="clearfix">
-                    <li class="pull-right">
+                    <li id="search-icon" class="pull-right">
                         <a href="#"><img src="img/icon_search.png" alt="search"></a>
                     </li>
                     <li class="pull-right">
@@ -68,12 +68,14 @@
             </div>
         </div>
 
+
+
         <!-- 로그인 -->
         <div class="header-bottom">
             <div class="inner clearfix">
                 <nav class="login pull-left clearfix">
                     <div class="log-in pull-left"><a class="tab1" href="#">LOGIN</a></div>
-                    <div class="join pull-left" ><a class="tab2" href="#">JOIN</a></div>
+                    <div class="join pull-left"><a class="tab2" href="#">JOIN</a></div>
                 </nav>
                 <!-- 메뉴 -->
                 <nav class="menu pull-right clearfix">
@@ -87,7 +89,7 @@
                     <div class="menu3 pull-left">
                         <a class="menu3-tab" href="#">영양성분 및 알레르기</a>
                     </div>
-                    <div  class="menu4 pull-left" >
+                    <div class="menu4 pull-left">
                         <a class="menu4-tab" href="#">EVENT</a>
                     </div>
                     <div class="menu5 pull-left">
@@ -98,6 +100,7 @@
                     </div>
                 </nav>
 
+                <!-- mouseover bg 메뉴 -->
                 <div class="gnb-bg">
                     <div class="gnb-bg-content clearfix">
                         <div class="gnb-bg-left pull-left"></div>
@@ -138,10 +141,62 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="search clearfix">
+                    <form action="">
+                        <div class="search-left pull-left">
+                            <div class="search-pd">
+                                <label for="product-name">제품명</label>
+                                <select name="product-name" id="product-name">
+                                    <option value="">전체</option>
+                                    <option value="아이스크림">아이스크림</option>
+                                    <option value="아이스크림케익">아이스크림케익</option>
+                                    <option value="음료">음료</option>
+                                    <option value="커피">커피</option>
+                                    <option value="디저트">디저트</option>
+                                    <option value="block pack">block pack</option>
+                                    <option value="ready pack">ready pack</option>
+                                </select>
+                                <input type="text" id="pdnm-input">
+                            </div>
+                            <div class="allergy-sel">
+                                <label class="allergy-tit" for="allergy">알레르기 성분</label>
+
+                                <div class="allergy-che clearfix">
+                                    <label class="pull-left" for="egg"><input type="checkbox" class="check" id="egg">계란</label>
+                                    <label class="pull-left" for="soybean"><input type="checkbox" class="check" id="soybean">대두</label>
+                                    <label class="pull-left" for="pork"><input type="checkbox" class="check" id="pork">돼지고기</label>
+                                    <label class="pull-left" for="peanut"><input type="checkbox" class="check" id="peanut">땅콩</label>
+                                    <label class="pull-left" for="wheat"><input type="checkbox" class="check" id="wheat">밀</label>
+                                    <label class="pull-left" for="peach"><input type="checkbox" class="check" id="peach">복숭아</label>
+                                    <label class="pull-left" for="milk"><input type="checkbox" class="check" id="milk">우유</label>
+                                    <label class="pull-left" for="none"><input type="checkbox" class="check" id="none">없음</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="search-right pull-right">
+                            <div class="hash">
+                                <label for="hash-tag">해시태그</label>
+                                <input type="text" id="hash-tag">
+                            </div>
+                            <p class="recommand-tag">
+                                <span>&middot;자주찾는 해시태그</span>
+                                <a href="">#치즈나무숲</a>
+                                <a href="">#치즈나무숲블라스트</a>
+                                <a href="">치즈나무숲아이스쿠키</a>
+                            </p>
+                        </div>
+                        <div class="search-bottom pull-left"><button type="button">검색</button></div>
+                      
+                    </form>
+
+                </div>
             </div>
         </div>
     </header>
-<!-- 
+    <!-- 
     mini banner -->
     <main>
         <section class="banner">
@@ -218,20 +273,20 @@
             </div>
         </section>
         <section class="br-menu">
-            <div class="br-menu-title"><img  src="img/h_menu.png" alt="br menu"></div>
-        
+            <div class="br-menu-title"><img src="img/h_menu.png" alt="br menu"></div>
+
             <img src="img/img_menu_list_211101.png" alt="menu-list">
-                   <div class="link-wrap">
-                       <a class="menu-icecream" href="#"></a>
-                       <a class="menu-icecream-cake" href="#"></a>
-                       <a class="menu-beverage" href="#"></a>
-                       <a class="menu-coffee" href="#"></a>
-                       <a class="menu-gift" href="#"></a>
-                       <a class="menu-dessert" href="#"></a>
-                   </div>
+            <div class="link-wrap">
+                <a class="menu-icecream" href="#"></a>
+                <a class="menu-icecream-cake" href="#"></a>
+                <a class="menu-beverage" href="#"></a>
+                <a class="menu-coffee" href="#"></a>
+                <a class="menu-gift" href="#"></a>
+                <a class="menu-dessert" href="#"></a>
+            </div>
         </section>
         <section class="br-store">
-        
+
             <div class="br-store-tab">
                 <img src="img/h_store.png" alt="br-store">
                 <a href="#"><img src="img/img_store.jpg" alt="store"></a>
@@ -240,7 +295,7 @@
                 <img src="img/h_happyorder_delivery.png" alt="br-happyorder&delivery">
                 <a href="#"><img src="img/img_happyorder_delivery.png" alt=""></a>
             </div>
-        
+
         </section>
         <section class="br-sns">
             <!-- sns small -->
@@ -274,7 +329,7 @@
         <section class="br-insta">
             <div class="br-insta-title">
                 <hr>
-                <img  src="img/tit_sns.png" alt="baskinrobbins_Instagram">
+                <img src="img/tit_sns.png" alt="baskinrobbins_Instagram">
             </div>
             <div class="insta-post">
                 <div><img src="img/post01.jpg" alt="post01"></div>
@@ -303,56 +358,60 @@
 
     <footer>
 
-            <nav class="policy">
+        <nav class="policy">
+            <ul>
+                <li><a href="">점포개설문의</a></li>
+                <li><a href="">채용문의</a></li>
+                <li><a href="">윤리신고센터</a></li>
+                <li><a href="">이용약관</a></li>
+                <li id="info-policy"><a href="">개인정보처리방침</a></li>
+                <li><a href="">영상정보처리기기운영관리방침</a></li>
+                <li><a href="">거래희망회사 사전등록</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="footer-section">
                 <ul>
-                    <li><a href="">점포개설문의</a></li>
-                    <li><a href="">채용문의</a></li>
-                    <li><a href="">윤리신고센터</a></li>
-                    <li><a href="">이용약관</a></li>
-                    <li id="info-policy"><a href="">개인정보처리방침</a></li>
-                    <li><a href="">영상정보처리기기운영관리방침</a></li>
-                    <li><a href="">거래희망회사 사전등록</a></li>
+                    <li><a href="https://www.happypointcard.com/page/main/index.spc"><img src="img/btn_happypoint.png"
+                                alt="해피포인트"></a></li>
+                    <li><a href="http://m.celectory.com/"><img src="img/btn_happymarket.png" alt=""></a></li>
+                    <li><a href="http://www.spc.co.kr/contributionAll"><img src="img/btn_spc_story.png" alt=""></a></li>
+                    <li class="li-group"><a href="https://sealinfo.verisign.com/"><img src="img/btn_norton.gif"
+                                alt=""></a></li>
+                    <li class="li-group"><a href="https://www.kca.go.kr/ccm/"><img src="img/btn_ccm.gif" alt=""></a>
+                    </li>
+                    <li class="li-group"><a href="https://www.kca.go.kr/ccm/"><img src="img/btn_ksa.png" alt=""></a>
+                    </li>
                 </ul>
-            </nav>
-            <section>
-                <div class="footer-section">
-                    <ul>
-                        <li><a href="https://www.happypointcard.com/page/main/index.spc"><img src="img/btn_happypoint.png" alt="해피포인트"></a></li>
-                        <li><a href="http://m.celectory.com/"><img src="img/btn_happymarket.png" alt=""></a></li>
-                        <li><a href="http://www.spc.co.kr/contributionAll"><img src="img/btn_spc_story.png" alt=""></a></li>
-                        <li class="li-group"><a href="https://sealinfo.verisign.com/"><img src="img/btn_norton.gif" alt=""></a></li>
-                        <li class="li-group"><a href="https://www.kca.go.kr/ccm/"><img src="img/btn_ccm.gif" alt=""></a></li>
-                        <li class="li-group"><a href="https://www.kca.go.kr/ccm/"><img src="img/btn_ksa.png" alt=""></a></li>
-                    </ul>
-                    <div>
-                        <select name="familySite" id="familySite" class="familysite">
-                            <option value="" disable selected>Family Site</option>
-                            <option value="https://baskinschool.hunet.co.kr/Login/LoginGate">베스킨스쿨</option>
-                            <option value="https://www.spc.co.kr/">SPC그룹사이트</option>
-                            <option value="https://www.spcmagazine.com/">SPC MAGAZINE</option>
-                            <option value="http://www.brkorea.co.kr/main/main.php">BR 코리아</option>
-                            <option value="https://www.happypointcard.com/page/main">해피포인트카드</option>
-                            <option value="https://www.caffe-pascucci.co.kr/index.asp">파스쿠찌</option>
-                            <option value="https://spcsamlip.co.kr/">삼립</option>
-                            <option value="https://www.paris.co.kr/">파리바케트</option>
-                            <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
-                        </select>
-                    </div>
+                <div>
+                    <select name="familySite" id="familySite" class="familysite">
+                        <option value="" disable selected>Family Site</option>
+                        <option value="https://baskinschool.hunet.co.kr/Login/LoginGate">베스킨스쿨</option>
+                        <option value="https://www.spc.co.kr/">SPC그룹사이트</option>
+                        <option value="https://www.spcmagazine.com/">SPC MAGAZINE</option>
+                        <option value="http://www.brkorea.co.kr/main/main.php">BR 코리아</option>
+                        <option value="https://www.happypointcard.com/page/main">해피포인트카드</option>
+                        <option value="https://www.caffe-pascucci.co.kr/index.asp">파스쿠찌</option>
+                        <option value="https://spcsamlip.co.kr/">삼립</option>
+                        <option value="https://www.paris.co.kr/">파리바케트</option>
+                        <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
+                    </select>
                 </div>
-                <div class="footer-logo"><img src="img/footer_logo.png" alt="베스킨라빈스 로고" ></div>
-                <address>
-                    <p>사업자등록번호: 303-81-09535</p>
-                    <p>비알코리아(주) 대표이사 도세호</p>
-                    <p>서울특별시 서초구 남부순환로2620(양재동 11-149번지)</p>
-                    <p>TEL: 080-555-3131</p>
-                    <p>개인정보관리책임자:김경우</p>
-                </address>
-                <div class="copyright">
-                    Copyright&copy;2016BRKOREA Comapany.All Right Reserved.
-                </div>
-            </section>
+            </div>
+            <div class="footer-logo"><img src="img/footer_logo.png" alt="베스킨라빈스 로고"></div>
+            <address>
+                <p>사업자등록번호: 303-81-09535</p>
+                <p>비알코리아(주) 대표이사 도세호</p>
+                <p>서울특별시 서초구 남부순환로2620(양재동 11-149번지)</p>
+                <p>TEL: 080-555-3131</p>
+                <p>개인정보관리책임자:김경우</p>
+            </address>
+            <div class="copyright">
+                Copyright&copy;2016BRKOREA Comapany.All Right Reserved.
+            </div>
+        </section>
     </footer>
-     
+
     <script src="index.js"></script>
 </body>
 

@@ -70,6 +70,29 @@ gnb.addEventListener("mouseout",e =>{
     gnb_bg.style.overflow = "hidden";
 })
 
+//search
+
+const searchImg = document.querySelector("#search-icon > a > img");
+const searchIcon = document.querySelector("#search-icon");
+const search = document.querySelector(".search");
+
+searchIcon.addEventListener("click",e =>{
+    const img_src = searchImg.getAttribute("src");
+    if(img_src == "img/icon_search.png"){
+    searchImg.setAttribute("src","img/btn_search_close.gif");
+    search.style.visibility = "visible";
+    search.style.opacity = "1";
+    console.log(img_src);
+    }
+   
+    if(img_src == "img/btn_search_close.gif"){
+        searchImg.setAttribute("src","img/icon_search.png");
+        search.style.visibility = "hidden";
+        search.style.opacity = "0";
+        search.style.overflow = "hidden";
+    }
+});
+
 //footer - select
 const select = document.querySelector("#familySite");
 
