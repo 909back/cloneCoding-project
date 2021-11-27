@@ -1,0 +1,221 @@
+main{
+    position: relative;
+    top: 123px;
+}
+
+main > .hundaiCard {
+    position: fixed;
+    top:154px;
+    left: 54.5%;
+    margin-left: 485px;
+    z-index: 999;
+}
+
+main > #banner1 {
+    background-color: #d1131d;
+    width: 100%;
+    height: 646px;
+}
+
+main > #banner1 > .banner1-inner {
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+main > #banner1 > .banner1-inner::before {
+    content: "";
+    width: 348px;
+    height: 150px;
+    display: block;
+    background-image: url(img/2021_chiristmas_bg_left.png);
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -5px;
+    bottom: 0;
+}
+
+main > #banner1 > .banner1-inner::after {
+    content: "";
+    width: 348px;
+    height: 84px;
+    display: block;
+    background-image: url(img/2021_chiristmas_bg_right.png);
+    background-position: 50% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
+
+#banner1 .m-2021-xmas {
+   position: absolute;
+   top: 54px;
+   margin: 5px;
+   width: 328px;
+}
+
+#banner1 .m-2021-xmas img {
+    width: 100%;
+}
+
+#banner1 .btn-sp {
+    position: absolute;
+    top: 230px;
+    left: 15px;
+    width: 328px;
+    height: 38px;
+    text-align: center;
+}
+
+#banner1 .btn-sp a {
+    display: block;
+    width: 129px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#banner1 .btn-sp:hover a {
+    display: block;
+    width: 129px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255,0.4);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#banner1 .m-2021-drink1 {
+   position: absolute;
+   top: 242px;
+   left: 299px;
+
+   width: 295px;
+   height: 291px;
+}
+
+#banner1 .m-2021-drink1 img {
+    width: 100%;
+}
+
+
+#banner1 .m-2021-drink2 {
+    position: absolute;
+    top: 56px;
+    left: 450px;
+ 
+    width: 503px;
+    height: 511px;
+ }
+
+ #banner1 .m-2021-drink2 img{
+    width: 503px;
+ }
+
+ #banner1 .m-2021-drink3 {
+    position: absolute;
+    top: 166px;
+    left: 886px;
+ 
+    width: 236px;
+    height: 417px;
+ }
+
+ /* riddon */
+
+#ribbon {
+    width: 100%;
+    height: 62px;
+}
+
+
+/* ribbon notice */
+#ribbon .notice {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+
+#ribbon .promotion {
+    height: 100%;
+    width: 50%;
+    background-color:#f6f5ef
+}
+/* ribbon commom */
+.ribbon-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#ribbon span {
+    height: 18px;
+    line-height: 18px;
+    margin: 22px 0px;
+}
+
+#ribbon .notice-tit {
+    text-indent: -222222px;
+    overflow: hidden;
+    color: #fff;
+    flex-basis: 64px;
+    background-image: url(img/notice_ttl.png);
+    background-repeat: no-repeat;
+}
+
+#ribbon .notice-cnt {
+    flex-basis: 300px;
+    color: #fff;
+    margin: 22px 13px;
+}
+
+#ribbon .notice-btn {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-image: url(img/btn_notice_plus.png);
+    background-size: contain;
+    width: 36px;
+    height: 36px;   
+    margin: 13px 20px;
+}
+
+#ribbon .promotion .ribbon-inner {
+    justify-content: start;
+}
+
+#ribbon .promotion .promotion-btn {
+    width: 284px;
+    height: 36px;
+    margin: 13px 100px;
+}
+
+#ribbon .promotion .promotion-btn img:first-child {
+    width: 129px;
+    height: 17px;
+    margin: 9px 40px 9px 20px;
+}
+#ribbon .promotion .promotion-btn img:nth-child(2) {
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+}
+
+/* promotion slide */
+#slide {
+    width: 100%;
+    height: 659px;
+}

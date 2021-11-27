@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brunch by EunjiBeak</title>
+    <title>by EunjiBeak</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shorcut icon" href="img/favicon64_150520.ico">
 </head>
 
 <body>
@@ -14,31 +16,37 @@
     <header>
         <!-- 스크롤이 일정px 까지 올라가면 hide가 떠야함 -->
         <div id="ribbon">
-            <div class="ribbon-hide">
-                <a href="">
-                    <img id="ribbon-hide-img" src="img/ridoon_hide.png" alt="수고했어 오늘도 프로모션">
-                </a>
-            </div>
-            <div class="ribbon-show">
-                <a href="">
-                    <img id="ribbon-show-img" src="img/riddon.png" alt="수고했어 오늘도 프로모션">
-                </a>
+            <div class="ribbon-inner">
+                <div class="ribbon-hide">
+                    <a href="">
+                        <img id="ribbon-hide-img" src="img/ridoon_hide.png" alt="수고했어 오늘도 프로모션">
+                    </a>
+                </div>
+                <div class="ribbon-show">
+                    <a href="">
+                        <img id="ribbon-show-img" src="img/riddon.png" alt="수고했어 오늘도 프로모션">
+                    </a>
+                </div>
             </div>
         </div>
         <!-- 헤더탑 / 로고+메뉴부분 -->
-        <nav id="header-top">
-            <div class="hambuger">아이콘</div>
-            <h1>
-                <a href="https://brunch.co.kr">로고</a>
-            </h1>
-            <button class="btn_start">시작하기</button>
-            <div class="search">아이콘</div>
+        <nav id="header" class="clearfix">
+            <div class="header-left pull-left">
+                <div class="hambuger"></div>
+                <h1>
+                    <a href="https://brunch.co.kr">로고</a>
+                </h1>
+            </div>
+            <div class="header-right pull-right">
+                <button class="btn_start">시작하기</button>
+                <div class="search">아이콘</div>
+            </div>
         </nav>
         <!-- side-menu -->
-        <section class="side-menu">
+        <section id="side-menu">
             <div class="side-menu-top">
-                <div>로고</div>
-                <p>You can make anything by writing</p>
+                <div class="logo">로고</div>
+                <p>You can make anything <br> by writing</p>
                 <p>- C.S.Lewis -</p>
                 <button class="sub-btn-start">브런치 시작하기</button>
             </div>
@@ -47,27 +55,30 @@
                 <div class="brunch-home">
                     <ul>
                         <li>
-                            <h4>
-                                <span class="bar-right"></span>
-                                브런치홈
-                                <span class="bar-left"></span>
-                            </h4>
+                            <p>
+                                <span class="bar"></span>
+                                브런치 홈
+                                <span class="bar"></span>
+                            </p>
                         </li>
                         <li>브런치 나우</li>
                         <li>브런치 책방</li>
                     </ul>
                 </div>
-                <a href="https://brunch.co.kr/@brunch/289" class="event">
-                    <span>이벤트</span>
-                    <span>결산 리포트 받기</span>
-                    <span></span>
-                </a>
-                <a href="https://brunch.co.kr/special/list">
-                    <span>작가-지원 <br> 프로젝트 보러가기</span>
-                    <span>아이콘</span>
-                </a>
+                <div class="get-report">
+                    <a href="https://brunch.co.kr/@brunch/289" class="event">
+                        <span class="event-round">이벤트</span>
+                        <span>결산 리포트 받기</span>
+                        <span class="arrow-icon"></span>
+                    </a>
+                </div>
+                <div class="author-apply">
+                    <a href="https://brunch.co.kr/special/list">
+                        <img src="img/작가지원.png" alt="작가지원하기">
+                    </a>
+                </div>
 
-                <a href="https://brunch.co.kr/signin/find_account">계정을 잊어버리셨나요?</a>
+                <a class="find-account" href="https://brunch.co.kr/signin/find_account">계정을 잊어버리셨나요?</a>
             </div>
         </section>
     </header>
@@ -76,43 +87,42 @@
         <!-- 배너 -->
         <section id="banner">
             <div class="banner-content">
-                <h3 class="banner-title">글이 작품이 되는 공간, 브런치<span></span></h3>
-                <p class="banner-content">
-                    <span>브런치에 담긴 아름다운 작품을 감상해 보세요.</span>
-                    <span>그리고 다시 꺼내보세요.</span>
-                    <span>서랍 속 간직하고 있는 글과 감성을.</span>
-                </p>
+                <h3 class="banner-title">글이 작품이 되는 공간, 브런치<span class="banner-logo"></span></h3>
+                <p>브런치에 담긴 아름다운 작품을 감상해 보세요.</p>
+                <p>그리고 다시 꺼내보세요.</p>
+                <p>서랍 속 간직하고 있는 글과 감성을.</p>
+
             </div>
-            <p>
+            <div class="info-update">
                 <span class="info-icon">Update</span>
                 <span>글쓰기 약속 알림 기능 추가 안내</span>
-            </p>
+            </div>
         </section>
 
         <!-- 슬라이드 구성 -->
         <section id="brunch-slide">
             <!-- 슬라이드 내용 -->
-            <ul>
+            <ul id="slide-wrap">
                 <!-- 슬라이드 페이지1 -->
                 <li class="page1">
-                    <span>
-                        <a href="#">
-                            <img src="img/slide/1.jpeg" alt="">
-                            <span>
-                                <span>영화볼까?</span>
-                                <span>예능볼래?</span>
-                                <span>드라마보자!</span>
-                                <span>숨결</span>
-                            </span>
-                        </a>
-                    </span>
-                    <span>First Edition</span>
-                    <span>Released date.Nov.15.2021</span>
-                    <a href="">
+
+                    <a href="#" class="page-1">
+                        <img src="img/slide/1.jpeg" alt="">
+                        <div>
+                            <span>영화볼까?</span>
+                            <span>예능볼래?</span>
+                            <span>드라마보자!</span>
+                            <span>숨결</span>
+                        </div>
+                        <span>First Edition</span>
+                        <span>Released date.Nov.15.2021</span>
+                    </a>
+                    <a href="" class="page-2">
                         <img src="img/slide/2.jpeg" alt="">
                         <span>육아의 현실</span>
                         <span><span>by</span>옥자씨</span>
-                    </a><a href="">
+                    </a>
+                    <a href="" class="page-3">
                         <img src="img/slide/3.jpeg" alt="">
                         <span>찬바람이 불면 털게를 쪄야지</span>
                         <span><span>by</span>여훈느</span>
@@ -120,19 +130,20 @@
                 </li>
                 <!-- 슬라이드 페이지2 -->
                 <!-- span 2필요 -->
-                <li class="page2">
-                    <a href="">
+                <li class="page2 pg-tp1">
+                    <a href="" class="page-1">
                         <img src="img/slide/4.jpeg" alt="">
                         <span>할머니가 되서도 데님을 입고싶다.</span>
                         <span>꼭 필요한 옷 하나를 고를라고 하면 0.1초의 망설입도 없이 무조건...</span>
                         <span><span>by</span>수지</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-2">
                         <img src="img/slide/5.jpeg" alt="">
                         <span>목이 늘어난 반팔티는 언제 버리는게 좋을끼</span>
                         <span>나는 정리를 좋아한다. 그리고 잘한다. 몇 가지 예시를 들자면...</span>
                         <span><span>by</span>다정</span>
-                    </a><a href="">
+                    </a>
+                    <a href="" class="page-3">
                         <img src="img/slide/6.jpeg" alt="">
                         <span>다시 엄마의 도시락을 먹을 수 있을까</span>
                         <span>엄마, 이제 도시락 안 싸주셔도 되요. 결혼 애기가 오갈 때쯤이었던 것...</span>
@@ -140,22 +151,23 @@
                     </a>
                 </li>
                 <!-- 슬라이드 페이지3 -->
-                <li class="page3">
-                    <a href="">
+                <li class="page3 pg-tp2">
+                    <a href="" class="page-1">
                         <img src="img/slide/7.jpeg" alt="">
                         <span>어머님은 귤 가져다 먹으라 하셨어</span>
                         <span><span>by</span>강유라</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-2">
                         <img src="img/slide/8.jpeg" alt="">
                         <span>10살 아들의 닭똥 같은 눈물</span>
                         <span> <span>by</span>유광일</span>
-                    </a><a href="">
+                    </a>
+                    <a href="" class="page-3">
                         <img src="img/slide/9.jpeg" alt="">
                         <span>얼굴이 못생겨서 미안해</span>
                         <span> <span>by</span>마닐라</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-4">
                         <img src="img/slide/10.jpeg" alt="">
                         <span>강릉에서의 좋은날</span>
                         <span><span>by</span>선아키</span>
@@ -163,18 +175,19 @@
                 </li>
                 <!-- 슬라이드 페이지4 -->
                 <!-- 1번만 span2 필요 -->
-                <li class="page4">
-                    <a href="">
+                <li class="page4 pg-tp3">
+                    <a href="" class="page-1">
                         <img src="img/slide/11.jpeg" alt="">
                         <span>사람을 쫒아내는 집, 불러들이는 집</span>
                         <span>나의 첫 주택 작업이였던 부산 해운대 '관해현'의 건축주가 새...</span>
                         <span><span>by</span>김정관</span>
-                    </a><a href="">
+                    </a>
+                    <a href="" class="page-2">
                         <img src="img/slide/12.jpeg" alt="">
                         <span>갑자기 고양이가 5마리</span>
                         <span>by Blair</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-3">
                         <img src="img/slide/13.jpeg" alt="">
                         <span>출산 하루 전날, 펑펑 울었다.</span>
                         <span><span>by</span>성의</span>
@@ -182,19 +195,20 @@
                 </li>
                 <!-- 슬라이드 페이지5 -->
                 <!-- span2 필요 -->
-                <li class="page5">
-                    <a href="">
+                <li class="page5 pg-tp1">
+                    <a href="" class="page-1">
                         <img src="img/slide/14.jpeg" alt="">
                         <span>나는 다시 뚱뚱한 여자가 되었다.</span>
                         <span>밤 11시 서울역 앞에는 호객행위를 하는 택시기사 무리가 정류장 앞...</span>
                         <span><span>by</span>수지</span>
-                    </a><a href="">
+                    </a>
+                    <a href="" class="page-2">
                         <img src="img/slide/15.jpeg" alt="">
                         <span>"편의점에서 컵라면 먹고 올게"이 말에 꽂혔다.</span>
                         <span>아이를 독립적인 인격체로 인정하게된 날을 기억한다.(물론 아이는 태어..)</span>
                         <span><span>by</span>조G</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-3">
                         <img src="img/slide/16.jpeg" alt="">
                         <span>아이의 고백은 늘 돌직구다.</span>
                         <span>잘 먹던 2호가 갑자기 밥을 안먹더니 결국 탈이 나이 나타나서..</span>
@@ -203,26 +217,27 @@
                 </li>
                 <!-- 슬라이드 페이지6 -->
                 <!-- 1만 span2 필요 -->
-                <li class="page6">
-                    <a href="">
+                <li class="page6 pg-tp4">
+                    <a href="" class="page-1">
                         <img src="img/slide/17.jpeg" alt="">
                         <span>김장의 헤게모니는 계속될 것인가?</span>
                         <span>11월 또 다시 김장시즌이 됐다.예전에는 친정집에 온가족이 모...</span>
                         <span><span>by</span>소안키친</span>
-                    </a><a href="">
+                    </a>
+                    <a href="" class="page-2">
                         <img src="img/slide/18.jpeg" alt="">
                         <span>소장이 20%만 남았습니다.</span>
                         <span>"소장이 20%만 남았습니다" 건전지나 밧데리의 전력이 20%..</span>
                         <span><span>by</span>외과의사 닥터오</span>
                     </a>
 
-                    <a href="">
+                    <a href="" class="page-3">
                         <img src="img/slide/20.jpeg" alt="">
                         <span>어묵?오뎅? 겨울에 '꼬치'면 됐지 뭐</span>
                         <span>◼︎ 이우석의 푸드로지 - 어묵생선 갈아낸후 빚어 튀진 음식강점기에...</span>
                         <span><span>by</span>이우석 더 프리면</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-4">
                         <img src="img/slide/23.jpeg" alt="">
                         <span>기분파 부부가 비엔나에 가면 생기는 일</span>
                         <span><span>by</span>조수필</span>
@@ -230,18 +245,19 @@
                 </li>
                 <!-- 슬라이드 페이지7 -->
                 <!-- 1만 필요 -->
-                <li class="page7">
+                <li class="page7 pg-tp3">
+                    <a href="" class="page-1">
                     <img src="img/slide/21.jpeg" alt="">
                     <span>30분 일하고 한시간 쉬는 직장</span>
                     <span>"나는 일 끝나면 춤 학원에서 춤 배워야지~"음..나는 우리...</span>
                     <span><span>by</span>안유하</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-2">
                         <img src="img/slide/22.jpeg" alt="">
                         <span>독립했다가 다시 돌아왔다. 엄마와 다시 같이 산다.</span>
                         <span><span>by</span>진유</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-3">
                         <img src="img/slide/19.jpeg" alt="">
                         <span>다 탕진하고 싶은 엄마의 유산</span>
                         <span>30대 육아가 한창일 즈음 내 별명은 '돌아이 육아맘'이었다. 40대...</span>
@@ -250,19 +266,20 @@
                 </li>
                 <!-- 슬라이드 페이지8 -->
                 <!-- span2 필요 -->
-                <li class="page8">
+                <li class="page8 pg-tp1">
+                    <a href="#" class="page-1">
                     <img src="img/slide/24.jpeg" alt="">
                     <span>고층살이에 대하여</span>
                     <span>나는 아파트 20층에 살고있다. 고층 빌딩에서 일해 본 경험은..</span>
                     <span><span>by</span>사다인</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-2">
                         <img src="img/slide/25.jpeg" alt="">
                         <span>앞으로는 절대로 누구에게도 돈을 빌려주지 않을..</span>
                         <span>매 달 카드값과 월세에 치여 사는 평범한 소시민이라, 돈 빌려 달...</span>
                         <span><span>by</span>푸린</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-3">
                         <img src="img/slide/26.jpeg" alt="">
                         <span>10년 차 전원주택 생활자</span>
                         <span><span>by</span>장수생</span>
@@ -270,24 +287,24 @@
                 </li>
                 <!-- 슬라이드 페이지9 -->
                 <!-- 1만 필요 -->
-                <li class="page9">
-                    <a href="">
+                <li class="page9 pg-tp4">
+                    <a href="" class="page-1">
                         <img src="img/slide/27.jpeg" alt="">
                         <span>진상중에 진상은 진상 학부모</span>
                         <span>앞선 브런치에도 적었는 난 아르바이트로 학교와 겸하게 다니..</span>
                         <span><span>by</span>몽접</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-2">
                         <img src="img/slide/28.jpeg" alt="">
                         <span>카카오 송금으로 부조를 한다고?</span>
                         <span><span>by</span>고든</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-3">
                         <img src="img/slide/29.jpeg" alt="">
                         <span>나는 깍두기</span>
                         <span><span>by</span>늦봄</span>
                     </a>
-                    <a href="">
+                    <a href="" class="page-4">
                         <img src="img/slide/30.jpeg" alt="">
                         <span>댁에 불이 난 것 같습니다.</span>
                         <span> <span>by</span>고든</span>

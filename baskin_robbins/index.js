@@ -12,6 +12,10 @@ console.log(indexList);
 const slideLength = slideItem.length;
 let count = 0;
 
+const slide = document.querySelector("body").clientWidth;
+
+console.log(slide);
+
 const size = slideItem[0].clientWidth;
 console.log(size);
 
