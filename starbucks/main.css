@@ -1,30 +1,30 @@
-main{
+main {
     position: relative;
     top: 123px;
 }
 
-main > .hundaiCard {
+main>.hundaiCard {
     position: fixed;
-    top:154px;
+    top: 154px;
     left: 54.5%;
     margin-left: 485px;
     z-index: 999;
 }
 
-main > #banner1 {
+main>#banner1 {
     background-color: #d1131d;
     width: 100%;
     height: 646px;
 }
 
-main > #banner1 > .banner1-inner {
+main>#banner1>.banner1-inner {
     width: 1080px;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
 
-main > #banner1 > .banner1-inner::before {
+main>#banner1>.banner1-inner::before {
     content: "";
     width: 348px;
     height: 150px;
@@ -38,7 +38,7 @@ main > #banner1 > .banner1-inner::before {
     bottom: 0;
 }
 
-main > #banner1 > .banner1-inner::after {
+main>#banner1>.banner1-inner::after {
     content: "";
     width: 348px;
     height: 84px;
@@ -53,10 +53,11 @@ main > #banner1 > .banner1-inner::after {
 }
 
 #banner1 .m-2021-xmas {
-   position: absolute;
-   top: 54px;
-   margin: 5px;
-   width: 328px;
+    position: absolute;
+    top: 54px;
+    margin: 5px;
+    width: 328px;
+    transition: opacity 0.5s ease-in;
 }
 
 #banner1 .m-2021-xmas img {
@@ -70,6 +71,7 @@ main > #banner1 > .banner1-inner::after {
     width: 328px;
     height: 38px;
     text-align: center;
+    transition: opacity 0.5s ease-in;
 }
 
 #banner1 .btn-sp a {
@@ -92,18 +94,19 @@ main > #banner1 > .banner1-inner::after {
     margin: 0 auto;
     color: #fff;
     border: 2px solid #fff;
-    background-color: rgba(255, 255, 255,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     text-decoration: none;
 }
 
 #banner1 .m-2021-drink1 {
-   position: absolute;
-   top: 242px;
-   left: 299px;
+    position: absolute;
+    top: 242px;
+    left: 299px;
 
-   width: 295px;
-   height: 291px;
+    width: 295px;
+    height: 291px;
+    transition: opacity 0.1s ease-in;
 }
 
 #banner1 .m-2021-drink1 img {
@@ -115,25 +118,27 @@ main > #banner1 > .banner1-inner::after {
     position: absolute;
     top: 56px;
     left: 450px;
- 
+
     width: 503px;
     height: 511px;
- }
+    transition: opacity 0.1s ease-in;
+}
 
- #banner1 .m-2021-drink2 img{
+#banner1 .m-2021-drink2 img {
     width: 503px;
- }
+}
 
- #banner1 .m-2021-drink3 {
+#banner1 .m-2021-drink3 {
     position: absolute;
     top: 166px;
     left: 886px;
- 
+
     width: 236px;
     height: 417px;
- }
+    transition: opacity 0.5s ease-in;
+}
 
- /* riddon */
+/* riddon */
 
 #ribbon {
     width: 100%;
@@ -151,8 +156,9 @@ main > #banner1 > .banner1-inner::after {
 #ribbon .promotion {
     height: 100%;
     width: 50%;
-    background-color:#f6f5ef
+    background-color: #f6f5ef
 }
+
 /* ribbon commom */
 .ribbon-inner {
     display: flex;
@@ -181,7 +187,13 @@ main > #banner1 > .banner1-inner::after {
     flex-basis: 300px;
     color: #fff;
     margin: 22px 13px;
+    text-decoration: none;
 }
+
+#ribbon .notice-cnt:hover {
+    text-decoration: underline;
+}
+
 
 #ribbon .notice-btn {
     text-indent: -9999px;
@@ -189,7 +201,7 @@ main > #banner1 > .banner1-inner::after {
     background-image: url(img/btn_notice_plus.png);
     background-size: contain;
     width: 36px;
-    height: 36px;   
+    height: 36px;
     margin: 13px 20px;
 }
 
@@ -208,6 +220,7 @@ main > #banner1 > .banner1-inner::after {
     height: 17px;
     margin: 9px 40px 9px 20px;
 }
+
 #ribbon .promotion .promotion-btn img:nth-child(2) {
     width: 36px;
     height: 36px;
@@ -215,7 +228,612 @@ main > #banner1 > .banner1-inner::after {
 }
 
 /* promotion slide */
+
+.slide-active {
+    opacity: 1!important;
+    order: 2;
+}
+
+.slide-next {
+    order:3;
+}
+
+.slide-prev {
+    order:1;
+}
+
 #slide {
+    display: none;
+    background-color: #f6f5ef;
     width: 100%;
     height: 659px;
+    padding-top: 39px;
 }
+
+#slide>.slide-wrap {
+    width: 1100px;
+    height: 541px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slide>.slide-wrap>.slide-li {
+    display: flex;
+    flex-direction: row;
+    width: 2487px;
+    position: relative;
+    left: -694px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slide>.slide-wrap>.slide-li>li {
+    height: 541px;
+    flex-basis: 819px;
+    margin: 0 5px;
+    opacity: 0.4;
+    transition: order 0.3s ease-in-out;
+}
+
+#slide-vw {
+    position: absolute;
+    left: 153px;
+    background-color: #000;
+}
+
+#slide>.slide-wrap>.slide-li>li>img {
+    width: 819px;
+    height: 553px;
+}
+
+#slide>.slide-wrap>.slide-li>li>a {
+    position: relative;
+    bottom: 5px;
+    display: block;
+    width: 121px;
+    height: 34px;
+    margin: -50px auto 0px auto;
+    font-size: 14px;
+    border: 2px solid #222;
+    color: #222;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 34px;
+}
+
+#slide>.slide-wrap>.slide-li>li>a:hover {
+    background-color: #222;
+    border: 2px solid #222;
+    color: #fff;
+    text-decoration: underline;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+/* slide - btn */
+#slide>.slide-wrap>.slide-btn {
+    position: absolute;
+    top: 225px;
+    width: 100%;
+}
+
+#slide>.slide-wrap>.slide-btn>div {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #222;
+    border-radius: 30px;
+    text-align: center;
+    opacity: 1;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#slide>.slide-wrap>.slide-btn>div:hover {
+    background-color: rgba(256, 256, 256, 0.8);
+}
+
+.slide-btn .btn-prev {
+    margin-left: 33px;
+}
+
+.slide-btn .btn-next {
+    margin-right: 33px;
+}
+
+#slide>.slide-wrap>.slide-btn>div>img {
+    width: 15px;
+    height: 26px;
+    margin: 16px 0;
+}
+
+/* slide-index */
+#slide>.slide-index {
+    position: relative;
+    bottom: -30px;
+    margin: auto;
+    width: 1100px;
+    height: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#slide>.slide-index>.btn-control {
+    width: 9px;
+    height: 12px;
+}
+
+.btn-stop {
+    background-image: url(img/main_prom_stop.png);
+}
+
+.btn-play {
+    background-image: url(img/main_prom_play.png);
+}
+
+#slide>.slide-index>ul {
+    display: block;
+    margin-left: 5px;
+    height: 12px;
+    position: relative;
+    top: -3px;
+}
+
+
+#slide>.slide-index>ul>li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+
+/* sbu-rw */
+
+main>#sbu-rw {
+    width: 100%;
+    height: 170px;
+    padding: 30px 0px 40px 0px;
+    background-color: #1e3932;
+}
+
+#sbu-rw>.inner {
+    width: 1080px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+}
+
+#sbu-rw>.inner>.rw-logo {
+    flex-basis: auto;
+    margin: 0 40px;
+    width: 16.3%;
+    text-align: center;
+}
+
+#sbu-rw>.inner>.rw-logo>img {
+    width: 176px;
+}
+
+#sbu-rw>.inner>.rw-content {
+    width: 824px;
+}
+
+#sbu-rw>.inner>.rw-content>.rw-top {
+    height: 108px;
+    width: 794px;
+    margin-bottom: 12px;
+    position: relative;
+
+    border-bottom: 1px solid #fff;
+}
+
+.rw-content>.rw-top>h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.rw-content>.rw-top>p {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.rw-content>.rw-top>button {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    height: 38px;
+
+    color: #fff;
+    border-radius: 5px;
+}
+
+.rw-content>.rw-top> button:hover {
+   text-decoration: underline;
+}
+
+.rw-content>.rw-top > button.rw-join {
+    width: 93px;
+    right: 90px;
+    background-color: #00704a;
+    border: 2px solid #00704a;
+
+}
+
+.rw-content>.rw-top>button.rw-login {
+    width: 79px;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.rw-content>.rw-btm {
+    height: 40px;
+    width: 794px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+
+    position: relative;
+}
+
+.rw-content>.rw-btm > button {
+    height: 38px;
+    width: 183px;
+
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rw-content>.rw-btm > button:hover {
+   text-decoration: underline;
+}
+
+
+/* banner2 */
+
+#banner2 {
+    width: 100%;
+    height: 573px;
+
+    background-image: url(img/2021_christmas_bean_bg.jpg);
+}
+
+#banner2>.inner {
+    width: 1080px;
+    height: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+}
+
+/* 
+    width: 484px;
+    height: 422px;
+     */
+
+#banner2>.inner>img:first-child {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -700px;
+    width: 484px;
+    height: 422px;
+    margin: 75.5px 0px;
+    transition: transform 0.8s ease-in-out;
+}
+
+
+/* 
+    top: 184px;
+    left: 584px;
+    right: 179px;
+} */
+#banner2>.inner>img:nth-child(2) {
+    display: inline-block;
+    position: absolute;
+    top: 184px;
+    right: -700px;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* 
+    top: 352px;
+    left: 584px;
+       right: 179px;
+ */
+#banner2>.inner>button {
+    position: absolute;
+    top: 352px;
+    right: -700px;
+    border: 2px solid #453d3d;
+    border-radius: 5px;
+    color: #453d3d;
+    width: 121px;
+    height: 38px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+    transition: transform 0.8s ease-in-out;
+}
+
+#banner2>.inner>button:hover {
+    border: 2px solid #453d3d;
+    background-color: #453d3d;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* banner3 */
+
+#banner3 {
+    height: 400px;
+    width: 100%;
+    background-image: url(img/reserve_christmas_bean_211018.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#banner3>.inner {
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#banner3>.inner>img {
+    position: relative;
+    top: 143px;
+}
+
+#banner3>.inner>button {
+    width: 121px;
+    height: 38px;
+    background-color: transparent;
+    color: #d5a012;
+    border: 2px solid #d5a012;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 270px;
+    left: 370.5px;
+    transition: background-color 0.5s ease-in;
+}
+
+#banner3>.inner>button:hover {
+   background-color: #d5a012;
+    color: #fff;
+    border: 2px solid #d5a012;
+    text-decoration: underline;
+}
+
+#banner4 {
+    width: 100%;
+    height: 800px;
+
+    background-image: url(img/fav_prod_bg_new.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+}
+
+#banner4>.inner {
+    width: 1250px;
+    height: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/* left: 200px; */
+#banner4>.inner>img:first-child {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: -700px;
+    transition: transform 0.8s ease-in-out;
+
+}
+
+/* left: 92px; */
+#banner4>.inner>img:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 370px;
+    left: -700px;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* left: 328px; */
+
+#banner4>.inner>button {
+    display: block;
+    position: absolute;
+    top: 570px;
+    left: -700px;
+
+    width: 121px;
+    height: 38px;
+
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+
+    font-size: 14px;
+    transition: background-color 0.5s ease-in;
+    transition: transform 0.8s ease-in-out;
+}
+
+#banner4>.inner>button:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #cecece;
+    text-decoration: underline;
+}
+
+#banner4>.inner>img:nth-child(4) {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 618px;
+}
+
+/* banner5 */
+
+#banner5 {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+
+    background-image: url(img/reserve_bg_pc.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: auto 353px;
+}
+
+#banner5>.inner {
+    height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+#banner5>.inner>img:first-child {
+    position: absolute;
+    top: 135px;
+    left: 55px;
+
+}
+
+#banner5>.inner>img:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#banner5>.inner>.bn5-go-sp {
+    height: 38px;
+    width: 121px;
+    font-size: 15px;
+
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: transparent;
+
+    position: absolute;
+    top: 265px;
+    left: 341px;
+
+    transition: background-color 0.5s ease-in;
+}
+
+#banner5>.inner>.bn5-go-sp:hover {
+    color: #fff;
+    border: 2px solid #000;
+    background-color: #000;
+    text-decoration: underline;
+
+}
+
+/* banner6 */
+#banner6 {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+
+    background-image: url(img/store_bg.jpg);
+}
+
+#banner6 > .inner {
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#banner6 >  .inner > img:first-child {
+    position: absolute;
+    top: 140px;
+    left: 390px;
+    z-index: 998;
+}
+
+#banner6 >  .inner > img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 160px;
+}
+
+
+#banner6 >  .inner > img:nth-child(3) {
+    position: absolute;
+    top: -60px;
+    left: 520px;
+}
+
+
+#banner6 >  .inner > img:nth-child(4) {
+    position: absolute;
+    top: 298px;
+    left: 1020px;
+}
+
+/* righ:149px */
+#banner6> .inner > img:nth-child(5) {
+    position: absolute;
+    top: 100px;
+    right: -700px;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* right 168px */
+#banner6> .inner > img:nth-child(6) {
+    position: absolute;
+    top: 168px;
+    right: -700px;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* right:402px */
+#banner6> .inner > button {
+    position: absolute;
+    top: 258px;
+    right: -700px;
+
+    font-size: 15px;
+
+    width: 121px;
+    height: 38px;
+    border: 2px solid #222;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: background-color 0.5s ease-in;
+    transition: transform 0.8s ease-in-out;
+}
+
+#banner6> .inner > button:hover {
+    border: 2px solid #222;
+    background-color: #222;
+    color: #fff;
+    text-decoration: underline;
+}
+
+

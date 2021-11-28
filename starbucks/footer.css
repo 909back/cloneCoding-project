@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* footer */
+
+footer {
+    height: 534px;
+    width: 100%;
+    padding: 32px 0 35px 0;
+    position: relative;
+    top: 123px;
+
+    background-color: #2C2A29;
+    color: #fff;
+}
+
+footer > .inner {
+    width: 1182px;
+    margin: 0 auto;
+
+    background-image: url(img/footer_logo.png);
+    background-position: right 8px;
+    background-repeat: no-repeat;
+}
+
+/* ft-gnb */
+
+footer > .inner > .ft-gnb {
+    width: 100%;
+    height: 214px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer > .inner >.ft-gnb > ul {
+    flex-basis: 220px;
+    margin-bottom: 30px;
+}
+
+
+.ft-gnb > ul > li > a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.ft-gnb > ul > li:hover > a {
+    text-decoration: underline;
+}
+
+.ft-gnb > ul > li.ftGnb-tit {
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.ft-gnb > ul > li.ftGnb-tit:hover {
+  text-decoration: underline;
+  }
+
+/* footer award */
+
+#footer-award {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #282828;
+}
+
+#footer-award > .footer-award-wrap {
+    width: 1182px;
+    height: 40px;
+    margin: auto;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer-award > .footer-award-wrap > img {
+    flex-basis: 158px;
+    height: 40px;
+}
+
+/* address */
+
+#footer-aside {
+    width: 100%;
+    height: 150px;
+    padding-top: 30px;
+
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#footer-aside > ul {
+    display: block;
+    height: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer-aside > ul > li {
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+}
+
+#footer-aside > ul > li > a{
+    color: #999;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#footer-aside > ul > li:hover > a{
+    text-decoration: underline;
+}
+
+#footer-aside > ul > .personal-info > a {
+    color: #00b050;
+}
+
+/* footer btn */
+
+#footer-aside .ftas-btn-wrap button {
+    font-size: 12px;
+    color: #fff;
+    background-color: transparent;
+    margin: 10px 2px 0px 3px;
+   
+    width: 110px;
+    height: 34px;
+
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+
+#footer-aside .ftas-btn-wrap button:hover {
+  text-decoration: underline;
+}
+
+/* address */
+
+#footer-aside address {
+    width: 100%;
+    text-align: center;
+    height: 18px;
+    padding: 25px 0 5px 0;
+}
+
+#footer-aside > address > .com-info {
+    height: 100%;
+}
+
+#footer-aside > address > .com-info > span {
+    display: inline-block;
+    margin: 0 7px;
+    font-style: normal;
+}
+
+#footer-aside > address > .copy {
+    display: inline-block;
+    line-height: 40px;
+}
+
