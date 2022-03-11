@@ -1,3 +1,11 @@
+
+/*
+@ Filename index.js
+@ Author 백은지(bej2560183089@gmail.com)
+@ Description 스타벅스 페이지에 JS 기능 구현 
+*/
+
+
 const banner1 = document.querySelector("#banner1");
 
 const bn1_Items = banner1.querySelectorAll("div:not(.banner1-inner)");

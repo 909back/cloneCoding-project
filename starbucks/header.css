@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/*
+@ Filename header.css
+@ Author 백은지(bej2560183089@gmail.com)
+@ Description 스타벅스 페이지 header 영역에 css 문서
+*/
+
 /* common */
 * {
     font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
@@ -138,6 +144,7 @@ div.header-wrap>#quick-gnb .li4 {
     margin: 6px auto;
 }
 
+/* nav */
 .header-wrap>nav {
     height: 66px;
     width: 100%;
@@ -169,7 +176,7 @@ div.header-wrap>#quick-gnb .li4 {
     font-family: Avenir, Arial, georgia;
 }
 
-.header-wrap> nav > ul > li:hover > a {
+.header-wrap>nav>ul>li:hover>a {
     color: #669900;
     background-color: #2c2a29;
     text-decoration: underline;
@@ -202,15 +209,15 @@ header nav #gnb .gnb-sub {
     background-image: url(img/gnb_sub_txbg.jpg);
 }
 
-.subGnb-btm > .subGnb-inner > h3 {
-    margin-top: 20px;    
+.subGnb-btm>.subGnb-inner>h3 {
+    margin-top: 20px;
 }
 
-.subGnb-btm > .subGnb-inner > h3:nth-child(3) {
-    margin-top: 0px;    
+.subGnb-btm>.subGnb-inner>h3:nth-child(3) {
+    margin-top: 0px;
 }
 
-.subGnb-btm > .subGnb-inner > h3 > a {
+.subGnb-btm>.subGnb-inner>h3>a {
     display: block;
     font-size: 12px;
     color: #999;
@@ -219,11 +226,11 @@ header nav #gnb .gnb-sub {
 }
 
 
-.subGnb-btm > .subGnb-inner > p{
+.subGnb-btm>.subGnb-inner>p {
     line-height: 18px;
     color: #669900;
     font-size: 12px;
-} 
+}
 
 .subGnb {
     display: flex;
@@ -232,7 +239,7 @@ header nav #gnb .gnb-sub {
     align-content: space-between;
 }
 
-.subGnb > li {
+.subGnb>li {
     flex-basis: 220px;
     width: 220px;
 }
@@ -245,7 +252,7 @@ header nav #gnb .gnb-sub {
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    
+
 }
 
 
@@ -256,7 +263,7 @@ header nav #gnb .gnb-sub {
     height: 16px;
 }
 
-.sub-list > li > a{
+.sub-list>li>a {
     font-size: 12px;
     color: #999;
     text-decoration: none;
@@ -265,7 +272,7 @@ header nav #gnb .gnb-sub {
 
 /* common hover */
 
-.sub-list > li:hover > a{
+.sub-list>li:hover>a {
     color: #999;
     text-decoration: underline;
 }
@@ -273,13 +280,14 @@ header nav #gnb .gnb-sub {
 .sub-tit:hover {
     text-decoration: underline;
     color: #fff;
-    
+
 }
-.subGnb-btm > .subGnb-inner > h3:hover > a {
+
+.subGnb-btm>.subGnb-inner>h3:hover>a {
     text-decoration: underline;
 }
 
-#gnb > li:hover > .gnb-sub {
+#gnb>li:hover>.gnb-sub {
     display: block;
 }
 
