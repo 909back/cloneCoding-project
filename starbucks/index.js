@@ -10,8 +10,6 @@ const banner1 = document.querySelector("#banner1");
 
 const bn1_Items = banner1.querySelectorAll("div:not(.banner1-inner)");
 
-console.log(bn1_Items);
-
 bn1_Items.forEach((v, i) => {
     v.style.opacity = "0";
 })
@@ -27,28 +25,40 @@ window.addEventListener("load", e => {
 
 
 // riddon
-
 const btnProm = document.querySelector("#btn-prom");
 const slide = document.querySelector("#slide");
 
 // slide 
-
 const btnPrev = slide.querySelector(".btn-prev");
 const btnNext = slide.querySelector(".btn-next");
 
 const slideItems = slide.querySelectorAll(".slide-li > li");
 
-console.log(slideItems);
-
 //slide-index 
-
 const slideIndex = slide.querySelectorAll(".slide-index > ul > li");
 
 //slide pause 
 const slideControl = slide.querySelector(".btn-control");
 
+
+//riddon prom click event
+btnProm.addEventListener("click", e => {
+
+    const slideShow = document.defaultView.getComputedStyle(slide).display
+    
+    if (slideShow === "none") {
+        btnProm.setAttribute("src", "img/btn_prom_up.png");
+        slide.style.display = "block";
+        
+    } else if (slideShow === "block") {
+        btnProm.setAttribute("src", "img/btn_prom_down.png");
+        slide.style.display = "none";   
+    }
+
+});
+
 const slideChange = setInterval(() => {
-    console.log("function on")
+
     slideItems.forEach((v, i) => {
         const slideActive = v.classList.contains("slide-active");
         const slideNext = v.classList.contains("slide-next");
@@ -103,21 +113,6 @@ slideControl.addEventListener("click", e =>{
     }, 3000);
   }
 })
-
-
-//riddon prom click event
-btnProm.addEventListener("click", e => {
-    const slideVw = slide.style.display;
-    if (slideVw == "none") {
-        btnProm.setAttribute("src", "img/btn_prom_up.png");
-        slide.style.display = "block";
-
-    } else if (slideVw != "none") {
-        btnProm.setAttribute("src", "img/btn_prom_down.png");
-        slide.style.display = "none";
-
-    }
-});
 
 //btnPrev click evnet
 btnPrev.addEventListener("click", e => {
